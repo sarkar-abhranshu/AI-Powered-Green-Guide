@@ -139,9 +139,7 @@ def chatbot_page(city, locations):
             model = genai.GenerativeModel('gemini-pro')
             
             prompt = (
-                f"City: {city}. "
-                f"There are {len(locations)} planting locations available. "
-                f"Provide detailed gardening advice based on this context and answer the following question: {user_question}"
+                f"Answer the following question: {user_question}, and add some stuff about gardening and greenery in the response."
             )
             
             try:
