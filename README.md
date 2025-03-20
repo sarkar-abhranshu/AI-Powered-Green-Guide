@@ -59,9 +59,9 @@ Enter a city name in the sidebar.
 
 Choose between the Guide or Chatbot page.
 
-Guide: Displays planting locations, soil information, and plant recommendations.
+**Guide:** Displays planting locations, soil information, and plant recommendations.
 
-Chatbot: Asks AI-powered queries about gardening and planting.
+**Chatbot:** Asks AI-powered queries about gardening and planting.
 
 ## 📜 API Keys Setup
 

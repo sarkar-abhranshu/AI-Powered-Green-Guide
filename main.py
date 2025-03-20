@@ -2,15 +2,19 @@ import streamlit as st
 import requests
 import urllib3
 import google.generativeai as genai
+import os
+from dotenv import load_dotenv
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
+load_dotenv()
+
 # API Configuration
-GEMINI_API_KEY = "AIzaSyAgX_Mxd8KffnmPJM4WW_ntrytT5Rr-PAI"  # Replace with your actual API key
-FOURSQUARE_API_KEY = "fsq3rkQoeZeLs2+AzvmWikHKeicY0hnUaw7iUUiSslmN1IU="
-WEATHERBIT_API_KEY = "90191bd9e98e465ab27497dd09f7a039"
-TREFLE_API_KEY = "ULEd7pwqvsoCxmGoOdU8FB-mJPoTpKMJqfdioUtLEJk"
-OPENCAGE_API_KEY = "3ddfb3402e95490ea2f5cf1f49100297"
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+FOURSQUARE_API_KEY = os.getenv("FOURSQUARE_API_KEY")
+WEATHERBIT_API_KEY = os.getenv("WEATHERBIT_API_KEY")
+TREFLE_API_KEY = os.getenv("TREFLE_API_KEY")
+OPENCAGE_API_KEY = os.getenv("OPENCAGE_API_KEY")
 
 # Configure Gemini
 genai.configure(api_key=GEMINI_API_KEY)
